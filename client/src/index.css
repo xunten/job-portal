@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: Outfit;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.rich-text { font-size: 15px; color: #7A7B7D };
+
+.rich-text p { margin-bottom: 16px; };
+
+.rich-text h2 {
+  font-size: 22;
+  font-weight: 700;
+  color: #252525;
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.rich-text h3 {
+  font-size: 22;
+  color: #000;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.rich-text strong {
+  font-weight: 700;
+}
+
+/* List styling */
+.rich-text ul,
+.rich-text ol {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-left: 18px;
+}
+
+.rich-text li {
+  margin-bottom: 8px;
+}
+
+/* Ordered list specific */
+.rich-text ol {
+  list-style-type: decimal;
+  margin-left: 30px;
+}
+
+/* Unordered list specific */
+.rich-text ul {
+  list-style-type: disc;
+  margin-left: 30px;
+}
+
+/* Button override (if needed inside content) */
+.rich-text button {
+  background-color: #1D4ED8;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-top: 16px;
+  border: none;
+  cursor: pointer;
+}
